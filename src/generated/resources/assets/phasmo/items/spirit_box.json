@@ -1,0 +1,20 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "phasmo:power",
+    "cases": [
+      {
+        "when": false,
+        "model": {
+          "type": "minecraft:model",
+          "model": "phasmo:item/spirit_box/off"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "phasmo:item/spirit_box"
+    }
+  }
+}

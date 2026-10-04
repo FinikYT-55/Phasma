@@ -1,0 +1,55 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "phasmo:power",
+    "cases": [
+      {
+        "when": false,
+        "model": {
+          "type": "minecraft:model",
+          "model": "phasmo:item/emf_detector/off"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:select",
+      "property": "minecraft:component",
+      "component": "phasmo:emp_lvl",
+      "cases": [
+        {
+          "when": 1,
+          "model": {
+            "type": "minecraft:model",
+            "model": "phasmo:item/emf_detector/1"
+          }
+        },
+        {
+          "when": 2,
+          "model": {
+            "type": "minecraft:model",
+            "model": "phasmo:item/emf_detector/2"
+          }
+        },
+        {
+          "when": 3,
+          "model": {
+            "type": "minecraft:model",
+            "model": "phasmo:item/emf_detector/3"
+          }
+        },
+        {
+          "when": 4,
+          "model": {
+            "type": "minecraft:model",
+            "model": "phasmo:item/emf_detector/4"
+          }
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "phasmo:item/emf_detector"
+      }
+    }
+  }
+}
